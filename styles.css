@@ -5,8 +5,8 @@
 body{
     font-family: 'Merriweather', sans-serif;
     text-align: center;
-    min-height: 100vh;
-    min-width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -43,6 +43,7 @@ header h1{
 }
 
 .wrapper{
+    box-sizing: border-box;
     text-align: left;
     font: inherit;
     backdrop-filter: blur(10px);
@@ -164,9 +165,9 @@ input[type="checkbox"]{
     display: none;
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .wrapper{
-        width: 100%
+        width: 90%;
     }
 
     #add-button{
